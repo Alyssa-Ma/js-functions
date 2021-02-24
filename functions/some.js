@@ -17,9 +17,6 @@ Array.prototype.mySome = function(callback){
         if(callback(this[i], i, this) == true) {
             anyFunc = true;
         }
-        else {
-            anyFunc = false;    // else false
-        }
     }
     return anyFunc  //return bool
 }
@@ -33,9 +30,9 @@ const baseArray = [];
 // checks whether an element is even
 const even = (element) => element % 2 === 0;
 
-console.log("Even Array: " + evenArray.some(even));
+console.log("Even Array: " + evenArray.mySome(even));
 // expected output: true
-console.log("Odd Array: " + oddArray.some(even));
+console.log("Odd Array: " + oddArray.mySome(even));
 // expected output: false
-console.log("Base Array: " + baseArray.some(even));
+console.log("Base Array: " + baseArray.mySome(even));
 // expected output: false
