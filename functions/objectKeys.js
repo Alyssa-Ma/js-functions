@@ -1,4 +1,5 @@
 /*
+Joanne Fung
 Object.keys()
 
 Without using the native “Object.keys()” method of JavaScript, compose a function titled “grabKeys” that will take in an object
@@ -10,11 +11,11 @@ The ordering of the properties is the same as that given by looping over the pro
 Object.keys() returns An array of strings that represent all the enumerable properties of the given object.
 */
 Object.grabKeys = function(obj) {
-    let keysArr = [];
-    for(const keys in obj) {
-        keysArr.push(keys);
+    let keysArr = [];   // declare new array
+    for(const keys in obj) {    // grab keys from object
+        keysArr.push(keys); // push keys into array
     }
-    return keysArr;
+    return keysArr; //returns array
 }
 
 

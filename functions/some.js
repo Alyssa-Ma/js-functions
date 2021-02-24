@@ -1,4 +1,5 @@
-/* 
+/*
+Joanne Fung
 The some() method executes the callback function once for each element present in the array until it finds the 
  one where callback returns a truthy value (a value that becomes true when converted to a Boolean). 
  If such an element is found, some() immediately returns true. Otherwise, some() returns false. 
