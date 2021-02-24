@@ -11,14 +11,14 @@ The some() method executes the callback function once for each element present i
  */
 
 Array.prototype.mySome = function(callback){
-    var anyFunc = false;
+    var anyFunc = false;    // function will always be false if callback doesn't exist in array
     for(let i=0; i < this.length; i++) {
         // if callback function is true, return true
         if(callback(this[i], i, this) == true) {
             anyFunc = true;
         }
     }
-    return anyFunc  //return bool
+    return anyFunc  // return bool
 }
 
 // TESTING
