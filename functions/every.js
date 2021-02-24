@@ -13,14 +13,17 @@ Array.prototype.myEvery = function(callback, elements)
     {
         throw new TypeError('null');
     }
-
+    //loop through array
     for(let i = 0; i <= this.length; i++)
     {
+        //if this element doesn't match the given callback, return false
         if(this[i] != callback)
         {
             return false;
         }
+        //else keep looping through the array until complete
     }
+    //every element matches the callback, therefore this is true
     return true;
 }
 
