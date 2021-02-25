@@ -23,3 +23,12 @@ const testMap = numbers.myMap(x => x * 2);
 
 console.log(testMap);
 */
+
+/* Testing #2
+let numbers = [1, 4, 9]
+let roots = numbers.myMap(function(num) {
+    return Math.sqrt(num)
+})
+console.log(roots);
+console.log(numbers);
+*/
